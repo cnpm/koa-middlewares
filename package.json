@@ -1,0 +1,46 @@
+{
+  "name": "koa-middlewares",
+  "version": "0.0.0",
+  "description": "easy way to require some useful koa middlewares",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dead-horse/koa-middlewares.git"
+  },
+  "keywords": [
+    "koa",
+    "middlewares",
+    "session",
+    "render",
+    "jsonp",
+    "body"
+  ],
+  "author": "dead_horse <dead_horse@qq.com> (http://deadhorse.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dead-horse/koa-middlewares/issues"
+  },
+  "homepage": "https://github.com/dead-horse/koa-middlewares",
+  "dependencies": {
+    "koa-bodyparser": "0.0.1",
+    "koa-csrf": "1.0.1",
+    "koa-ejs": "0.0.1",
+    "koa-favicon": "1.0.1",
+    "koa-jsonp": "0.0.3",
+    "koa-logger": "1.2.0",
+    "koa-redis": "0.0.5",
+    "koa-resource-router": "0.2.0",
+    "koa-rewrite": "1.1.0",
+    "koa-router": "3.0.2",
+    "koa-rt": "0.0.2",
+    "koa-sess": "0.0.8",
+    "koa-static-cache": "1.0.4"
+  },
+  "devDependencies": {
+    "koa": "*"
+  },
+  "files": ["index.js"]
+}
