@@ -12,7 +12,7 @@ npm install koa-middlewares --save
 ## middlewares
 
 ```
-"koa-bodyparser": "0.0.1",
+"koa-bodyparser": "0.0.2",
 "koa-csrf": "1.0.1",
 "koa-ejs": "0.0.1",
 "koa-favicon": "1.0.1",
