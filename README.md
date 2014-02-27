@@ -17,6 +17,7 @@ npm install koa-middlewares --save
 "koa-ejs": "0.0.1",
 "koa-etag": "1.2.2",
 "koa-favicon": "1.0.1",
+"koa-fresh": "0.0.1",
 "koa-jsonp": "0.0.3",
 "koa-logger": "1.2.0",
 "koa-redis": "0.0.5",
