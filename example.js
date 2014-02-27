@@ -18,6 +18,8 @@ var app = koa();
 app.use(middlewares.bodyParser());
 app.use(middlewares.jsonp());
 app.use(middlewares.router(app));
+app.use(middlewares.fresh());
+app.use(middlewares.etag());
 middlewares.csrf(app);
 
 app.use(function *() {
