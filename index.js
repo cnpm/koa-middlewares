@@ -23,3 +23,4 @@ exports.csrf = require('koa-csrf');
 exports.logger = require('koa-logger');
 exports.favicon = require('koa-favicon');
 exports.rewrite = require('koa-rewrite');
+exports.etag = require('koa-etag');
