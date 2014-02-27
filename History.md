@@ -1,5 +1,10 @@
 
-0.0.5 / 2014-02-27 
+0.0.6 / 2014-02-27
+==================
+
+  * update koa-sess, koa-session, koa-etag
+
+0.0.5 / 2014-02-27
 ==================
 
   * Merge pull request #1 from fengmk2/koa-fresh
