@@ -15,17 +15,17 @@ npm install koa-middlewares --save
 "koa-bodyparser": "0.0.2",
 "koa-csrf": "1.0.1",
 "koa-ejs": "0.0.1",
-"koa-etag": "1.2.2",
+"koa-etag": "1.2.3",
 "koa-favicon": "1.0.1",
 "koa-fresh": "0.0.1",
 "koa-jsonp": "0.0.3",
 "koa-logger": "1.2.0",
-"koa-redis": "0.0.5",
+"koa-redis": "0.1.0",
 "koa-resource-router": "0.2.0",
 "koa-rewrite": "1.1.0",
 "koa-router": "3.0.2",
 "koa-rt": "0.0.2",
-"koa-sess": "0.0.9",
+"koa-sess": "0.1.0",
 "koa-static-cache": "1.0.4"
 ```
 
