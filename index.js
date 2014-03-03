@@ -10,15 +10,15 @@
  * Module dependencies.
  */
 
-exports.bodyParser = require('koa-bodyparser');
+exports.bodyparser = exports.bodyParser = require('koa-bodyparser');
 exports.render = require('koa-ejs');
 exports.session = require('koa-sess');
-exports.RedisStore = require('koa-redis');
+exports.redisStore = exports.RedisStore = require('koa-redis');
 exports.staticCache = require('koa-static-cache');
 exports.rt = require('koa-rt');
 exports.jsonp = require('koa-jsonp');
 exports.router = require('koa-router');
-exports.ResourceRouter = require('koa-resource-router');
+exports.resourceRouter = exports.ResourceRouter = require('koa-resource-router');
 exports.csrf = require('koa-csrf');
 exports.logger = require('koa-logger');
 exports.favicon = require('koa-favicon');
