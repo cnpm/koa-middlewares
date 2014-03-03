@@ -55,7 +55,7 @@ app.listen(7001);
 
 ## Middlewares Quick Guide
 
-* koa-bodyparser: post body parser,
+* **koa-bodyparser**: post body parser,
 for `application/json` and `application/x-www-form-urlencoded`.
 
 ```
@@ -68,7 +68,7 @@ app.use(function *(next) {
 });
 ```
 
-* koa-csrf: CSRF tokens.
+* **koa-csrf**: CSRF tokens.
 
 ```
 middlewares.csrf(app);
@@ -84,7 +84,7 @@ app.use(function *checkCsrf(next) {
 });
 ```
 
-* koa-ejs: ejs view render middleware. support all feature of ejs.
+* **koa-ejs**: ejs view render middleware. support all feature of ejs.
 
 ```
 middewares.render(app, {
@@ -96,8 +96,8 @@ app.use(function *() {
 });
 ```
 
-* koa-etag: ETag support for Koa responses.
-* koa-fresh: HTTP response freshness testing middleware base on node-fresh.
+* **koa-etag**: ETag support for Koa responses.
+* **koa-fresh**: HTTP response freshness testing middleware base on node-fresh.
 It works togather with koa-etag.
 
 ```
@@ -105,27 +105,27 @@ app.use(middlewares.fresh());
 app.use(middlewares.etag());
 ```
 
-* koa-favicon: Bounce favicon requests with a 404.
+* **koa-favicon**: Bounce favicon requests with a 404.
 
 ```
 app.use(middlewares.favicon());
 ```
 
-* koa-jsonp: A koajs streaming friendly JSONP middleware that supports GET/POST JSONP requests.
+* **koa-jsonp**: A koajs streaming friendly JSONP middleware that supports GET/POST JSONP requests.
 
 ```
 app.use(middlewares.jsonp());
 ```
 
-* koa-logger: Development style logger.
+* **koa-logger**: Development style logger.
 
 ```
 app.use(middlewares.logger());
 ```
 
-* koa-sess: A session like connect with memory,
+* **koa-sess**: A session like connect with memory,
 has friendly APIs for work with other Stores such as `redis`, `mongo`.
-* koa-redis: Work togather with `koa-sess`, provide a redis store from koa-sess.
+* **koa-redis**: Work togather with `koa-sess`, provide a redis store from koa-sess.
 
 ```
 app.use(middlewares.session({
@@ -138,7 +138,7 @@ app.use(function *() {
 });
 ```
 
-* koa-router: Provide express-style routing using app.get, app.put, app.post.
+* **koa-router**: Provide express-style routing using app.get, app.put, app.post.
 
 ```
 app.use(middlewares.router(app));
@@ -147,7 +147,7 @@ app.get('/', function *() {
 });
 ```
 
-* koa-resource-router: RESTful resource routing for koa.
+* **koa-resource-router**: RESTful resource routing for koa.
 
 ```
 var users = new middlewares.Resource('users');
@@ -158,13 +158,13 @@ app.get('/users', function *() {
 });
 ```
 
-* koa-rewrite: URL rewrite middleware.
+* **koa-rewrite**: URL rewrite middleware.
 
 ```
 app.use(middlewares.rewrite('/js/*', '/public/assets/js/$1'));
 ```
 
-* koa-rt: Log response time, support custom with microtime.
+* **koa-rt**: Log response time, support custom with microtime.
 
 ```
 var microtime = require('microtime');
@@ -173,7 +173,7 @@ app.use(middlewares.rt({
 }));
 ```
 
-* koa-static-cache: Static file serving from memory.
+* **koa-static-cache**: Static file serving from memory.
 
 ```
 app.use(middlewares.staticCache(path.join(__dirname, 'public'), {
