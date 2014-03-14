@@ -1,5 +1,11 @@
 
-0.0.9 / 2014-03-11 
+0.0.10 / 2014-03-14
+==================
+
+  * update readme for koa-sess
+  * update koa-sess, koa-router
+
+0.0.9 / 2014-03-11
 ==================
 
   * update ejs, static-cache, bodyparser, gzip, fresh
