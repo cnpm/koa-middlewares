@@ -13,21 +13,21 @@ npm install koa-middlewares --save
 
 ## middlewares
 
-* [koa-bodyparser@0.0.2](https://github.com/dead-horse/koa-body-parser)
-* [koa-csrf@1.0.1](https://github.com/koajs/csrf)
-* [koa-ejs@0.0.1](https://github.com/dead-horse/koa-ejs)
-* [koa-etag@1.2.3](https://github.com/koajs/etag)
-* [koa-favicon@1.0.1](https://github.com/koajs/favicon)
-* [koa-fresh@0.0.1](https://github.com/fengmk2/koa-fresh)
-* [koa-jsonp@0.0.3](https://github.com/kilianc/koa-jsonp)
-* [koa-logger@1.2.0](https://github.com/koajs/logger)
-* [koa-redis@0.1.0](https://github.com/dead-horse/koa-redis)
-* [koa-resource-router@0.2.0](https://github.com/alexmingoia/koa-resource-router)
-* [koa-rewrite@1.1.0](https://github.com/koajs/rewrite)
-* [koa-router@3.0.2](https://github.com/alexmingoia/koa-router)
-* [koa-rt@0.0.2](https://github.com/dead-horse/koa-rt)
-* [koa-sess@0.1.0](https://github.com/dead-horse/koa-session)
-* [koa-static-cache@1.0.4](https://github.com/koajs/static-cache)
+* [koa-bodyparser](https://github.com/dead-horse/koa-body-parser)
+* [koa-csrf](https://github.com/koajs/csrf)
+* [koa-ejs](https://github.com/dead-horse/koa-ejs)
+* [koa-etag](https://github.com/koajs/etag)
+* [koa-favicon](https://github.com/koajs/favicon)
+* [koa-fresh](https://github.com/fengmk2/koa-fresh)
+* [koa-jsonp](https://github.com/kilianc/koa-jsonp)
+* [koa-logger](https://github.com/koajs/logger)
+* [koa-redis](https://github.com/dead-horse/koa-redis)
+* [koa-resource-router](https://github.com/alexmingoia/koa-resource-router)
+* [koa-rewrite](https://github.com/koajs/rewrite)
+* [koa-router](https://github.com/alexmingoia/koa-router)
+* [koa-rt](https://github.com/dead-horse/koa-rt)
+* [koa-sess](https://github.com/dead-horse/koa-session)
+* [koa-static-cache](https://github.com/koajs/static-cache)
 
 
 ## Usage
@@ -129,12 +129,14 @@ has friendly APIs for work with other Stores such as `redis`, `mongo`.
 
 ```
 app.use(middlewares.session({
-  store: middlewares.RedisStore()
+  store: middlewares.RedisStore(),
+  defer: true
 }));
 
 app.use(function *() {
-  this.session = {foo: 'bar'};
-  this.body = this.session;
+  var session = yield this.session;
+  session.foo = 'bar';
+  this.body = this.session.foo;
 });
 ```
 
