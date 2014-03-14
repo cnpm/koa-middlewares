@@ -37,9 +37,9 @@
     "koa-redis": "0.1.0",
     "koa-resource-router": "0.2.0",
     "koa-rewrite": "1.1.0",
-    "koa-router": "3.1.0",
+    "koa-router": "3.1.1",
     "koa-rt": "0.0.2",
-    "koa-sess": "0.1.0",
+    "koa-sess": "0.2.0",
     "koa-static-cache": "1.0.6"
   },
   "devDependencies": {
