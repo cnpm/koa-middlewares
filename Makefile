@@ -1,7 +1,7 @@
 install:
 	@npm install --registry=http://r.cnpmjs.org
 
-autod: install
+autod:
 	@./node_modules/.bin/autod -w -e example.js
 
 contributors: install
