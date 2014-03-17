@@ -11,7 +11,7 @@
  */
 
 exports.bodyparser = exports.bodyParser = require('koa-bodyparser');
-exports.render = require('koa-ejs');
+exports.ejs = exports.render = require('koa-ejs');
 exports.session = require('koa-sess');
 exports.redisStore = exports.RedisStore = require('koa-redis');
 exports.staticCache = require('koa-static-cache');

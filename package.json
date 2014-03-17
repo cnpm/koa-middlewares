@@ -27,7 +27,7 @@
   "dependencies": {
     "koa-bodyparser": "0.1.0",
     "koa-csrf": "1.0.1",
-    "koa-ejs": "0.0.2",
+    "koa-ejs": "0.0.3",
     "koa-etag": "1.2.3",
     "koa-favicon": "1.0.1",
     "koa-fresh": "0.0.3",

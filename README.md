@@ -76,7 +76,7 @@ app.use(function *checkCsrf(next) {
   if (this.method === 'GET' ||
       this.method === 'HEAD' ||
       this.method === 'OPTIONS') {
-    return yield next;
+    return yield *next;
   }
 
   this.assertCsrf();
