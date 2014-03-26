@@ -26,3 +26,4 @@ exports.rewrite = require('koa-rewrite');
 exports.etag = require('koa-etag');
 exports.fresh = require('koa-fresh');
 exports.gzip = require('koa-gzip');
+exports.compress = require('koa-compress');

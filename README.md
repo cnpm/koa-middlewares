@@ -16,6 +16,7 @@ npm install koa-middlewares --save
 * [koa-bodyparser](https://github.com/dead-horse/koa-body-parser)
 * [koa-csrf](https://github.com/koajs/csrf)
 * [koa-ejs](https://github.com/dead-horse/koa-ejs)
+* [koa-compress](https://github.com/koajs/koa-compress)(recommended)
 * [koa-etag](https://github.com/koajs/etag)
 * [koa-favicon](https://github.com/koajs/favicon)
 * [koa-fresh](https://github.com/fengmk2/koa-fresh)
@@ -183,6 +184,16 @@ app.use(middlewares.staticCache(path.join(__dirname, 'public'), {
   maxAge: 60 * 60 * 24 * 7,
   dir: path.join(rootdir, 'public')
 }));
+```
+
+* **koa-compress**: Compress middleware for Koa, support `gzip` and `deflate`
+
+```
+var app = koa()
+app.use(compress({
+  threshold: 2048,
+  flush: require('zlib').Z_SYNC_FLUSH
+}))
 ```
 
 ## License
