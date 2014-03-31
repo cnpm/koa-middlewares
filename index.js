@@ -25,4 +25,4 @@ exports.favicon = require('koa-favicon');
 exports.rewrite = require('koa-rewrite');
 exports.etag = require('koa-etag');
 exports.compress = require('koa-compress');
-exports.conditionalGet = require('koa-conditional-get');
+exports.conditional = require('koa-conditional-get');

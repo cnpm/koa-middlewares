@@ -30,6 +30,7 @@ npm install koa-middlewares --save
 * [koa-sess](https://github.com/dead-horse/koa-session)
 * [koa-static-cache](https://github.com/koajs/static-cache)
 
+see [exports](https://github.com/dead-horse/koa-middlewares/blob/master/index.js)
 
 ## Usage
 
@@ -43,7 +44,7 @@ var app = koa();
 app.use(middlewares.bodyParser());
 app.use(middlewares.jsonp());
 app.use(middlewares.router(app));
-app.use(middlewares.conditionalGet());
+app.use(middlewares.conditional());
 app.use(middlewares.etag());
 app.use(middlewares.compress());
 middlewares.csrf(app);
@@ -103,7 +104,7 @@ app.use(function *() {
 use it upstream from etag.
 
 ```
-app.use(middlewares.conditionalGet());
+app.use(middlewares.conditional());
 app.use(middlewares.etag());
 ```
 
