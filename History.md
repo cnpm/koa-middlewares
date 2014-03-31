@@ -1,5 +1,10 @@
 
-0.1.2 / 2014-03-28 
+0.1.3 / 2014-03-31
+==================
+
+  * remove koa-fresh, add koa-conditional-get
+
+0.1.2 / 2014-03-28
 ==================
 
   * fix koa-compress dep

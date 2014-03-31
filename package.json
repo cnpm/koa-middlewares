@@ -1,6 +1,6 @@
 {
   "name": "koa-middlewares",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "easy way to require some useful koa middlewares",
   "main": "index.js",
   "scripts": {
@@ -39,8 +39,8 @@
     "koa-rewrite": "^1.1.0",
     "koa-router": "^3.1.2",
     "koa-rt": "0.0.2",
-    "koa-sess": "^0.3.0",
-    "koa-static-cache": "^1.0.6"
+    "koa-sess": "^0.3.1",
+    "koa-static-cache": "^1.0.9"
   },
   "devDependencies": {
     "koa": "*"
