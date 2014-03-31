@@ -27,12 +27,11 @@
   "dependencies": {
     "koa-bodyparser": "^0.1.0",
     "koa-compress": "^1.0.4",
+    "koa-conditional-get": "^1.0.1",
     "koa-csrf": "^1.0.1",
     "koa-ejs": "0.0.3",
     "koa-etag": "^1.2.3",
     "koa-favicon": "^1.0.1",
-    "koa-fresh": "0.0.3",
-    "koa-gzip": "0.0.3",
     "koa-jsonp": "0.0.3",
     "koa-logger": "^1.2.0",
     "koa-redis": "^0.1.0",

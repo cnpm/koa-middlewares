@@ -16,10 +16,10 @@ npm install koa-middlewares --save
 * [koa-bodyparser](https://github.com/dead-horse/koa-body-parser)
 * [koa-csrf](https://github.com/koajs/csrf)
 * [koa-ejs](https://github.com/dead-horse/koa-ejs)
-* [koa-compress](https://github.com/koajs/koa-compress)(recommended)
+* [koa-compress](https://github.com/koajs/koa-compress)
+* [koa-conditional-get](https://github.com/koajs/koa-conditional-get)
 * [koa-etag](https://github.com/koajs/etag)
 * [koa-favicon](https://github.com/koajs/favicon)
-* [koa-fresh](https://github.com/fengmk2/koa-fresh)
 * [koa-jsonp](https://github.com/kilianc/koa-jsonp)
 * [koa-logger](https://github.com/koajs/logger)
 * [koa-redis](https://github.com/dead-horse/koa-redis)
@@ -43,8 +43,9 @@ var app = koa();
 app.use(middlewares.bodyParser());
 app.use(middlewares.jsonp());
 app.use(middlewares.router(app));
-app.use(middlewares.fresh());
+app.use(middlewares.conditionalGet());
 app.use(middlewares.etag());
+app.use(middlewares.compress());
 middlewares.csrf(app);
 
 app.use(function *() {
@@ -98,11 +99,11 @@ app.use(function *() {
 ```
 
 * **koa-etag**: ETag support for Koa responses.
-* **koa-fresh**: HTTP response freshness testing middleware base on node-fresh.
-It works togather with koa-etag.
+* **koa-conditional-get**: HTTP response freshness testing middleware base on node-fresh.
+use it upstream from etag.
 
 ```
-app.use(middlewares.fresh());
+app.use(middlewares.conditionalGet());
 app.use(middlewares.etag());
 ```
 
@@ -195,6 +196,7 @@ app.use(compress({
   flush: require('zlib').Z_SYNC_FLUSH
 }))
 ```
+
 
 ## License
 MIT
