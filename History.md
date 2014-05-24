@@ -1,4 +1,11 @@
 
+0.2.0 / 2014-05-25
+==================
+
+  * remove middlewares.render, add cookieSession
+  * bump dependencies
+  * rename to conditional
+
 0.1.3 / 2014-03-31
 ==================
 
