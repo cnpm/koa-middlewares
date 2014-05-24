@@ -25,25 +25,26 @@
   },
   "homepage": "https://github.com/dead-horse/koa-middlewares",
   "dependencies": {
-    "koa-bodyparser": "^0.1.0",
-    "koa-compress": "^1.0.4",
-    "koa-conditional-get": "^1.0.1",
-    "koa-csrf": "^1.0.1",
-    "koa-ejs": "0.0.3",
-    "koa-etag": "^1.2.3",
-    "koa-favicon": "^1.0.1",
+    "koa-bodyparser": "~1.0.1",
+    "koa-compress": "~1.0.7",
+    "koa-conditional-get": "~1.0.2",
+    "koa-csrf": "~1.1.1",
+    "koa-ejs": "~1.0.1",
+    "koa-etag": "~1.2.4",
+    "koa-favicon": "~1.1.0",
     "koa-jsonp": "0.0.3",
-    "koa-logger": "^1.2.0",
-    "koa-redis": "^0.1.0",
-    "koa-resource-router": "^0.3.0",
-    "koa-rewrite": "^1.1.0",
-    "koa-router": "^3.1.2",
+    "koa-logger": "~1.2.1",
+    "koa-redis": "~0.1.0",
+    "koa-resource-router": "~0.3.3",
+    "koa-rewrite": "~1.1.0",
+    "koa-router": "~3.1.4",
     "koa-rt": "0.0.2",
-    "koa-sess": "^0.3.1",
-    "koa-static-cache": "^1.0.9"
+    "koa-sess": "~0.3.3",
+    "koa-static-cache": "~1.0.10"
   },
   "devDependencies": {
-    "koa": "*"
+    "autod": "~0.2.0",
+    "koa": "~0.6.0"
   },
   "files": [
     "index.js"
