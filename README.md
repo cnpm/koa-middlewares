@@ -1,4 +1,4 @@
-koa-middlewares [![Dependency Status](https://gemnasium.com/dead-horse/koa-middlewares.png)](https://gemnasium.com/dead-horse/koa-middlewares)
+koa-middlewares [![Dependency Status](https://gemnasium.com/cnpm/koa-middlewares.svg)](https://gemnasium.com/dead-horse/koa-middlewares)
 ===============
 
 easy way to use some small but useful koa middlewares.
@@ -27,6 +27,7 @@ npm install koa-middlewares --save
 * [koa-rewrite](https://github.com/koajs/rewrite)
 * [koa-router](https://github.com/alexmingoia/koa-router)
 * [koa-rt](https://github.com/dead-horse/koa-rt)
+* [koa-session](https://github.com/koajs/session)
 * [koa-sess](https://github.com/dead-horse/koa-session)
 * [koa-static-cache](https://github.com/koajs/static-cache)
 
@@ -124,6 +125,12 @@ app.use(middlewares.jsonp());
 
 ```
 app.use(middlewares.logger());
+```
+
+* **koa-session**: cookie base session.
+
+```
+app.use(middlewares.cookieSession());
 ```
 
 * **koa-sess**: A session like connect with memory,
