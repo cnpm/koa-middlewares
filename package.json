@@ -40,6 +40,7 @@
     "koa-router": "~3.1.4",
     "koa-rt": "0.0.2",
     "koa-sess": "~0.3.3",
+    "koa-session": "~2.0.0",
     "koa-static-cache": "~1.0.10"
   },
   "devDependencies": {
