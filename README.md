@@ -91,7 +91,7 @@ app.use(function *checkCsrf(next) {
 * **koa-ejs**: ejs view render middleware. support all feature of ejs.
 
 ```
-middewares.render(app, {
+middlewares.render(app, {
   root: path.join(__dirname, 'view')
 });
 
