@@ -1,4 +1,11 @@
 
+1.0.0 / 2014-06-29
+==================
+
+  * replace koa-sess with koa-generic-session
+  * Merge pull request #4 from mtakuya/fix-readme.md
+  * Fix typo in README.md * `middewares` to `middlewares`
+
 0.2.1 / 2014-05-25
 ==================
 
