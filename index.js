@@ -12,7 +12,7 @@
 
 exports.bodyparser = exports.bodyParser = require('koa-bodyparser');
 exports.ejs = require('koa-ejs');
-exports.session = require('koa-sess');
+exports.session = require('koa-generic-session');
 exports.cookieSession = require('koa-session');
 exports.redisStore = exports.RedisStore = require('koa-redis');
 exports.staticCache = require('koa-static-cache');

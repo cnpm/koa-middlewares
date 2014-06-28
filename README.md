@@ -28,7 +28,7 @@ npm install koa-middlewares --save
 * [koa-router](https://github.com/alexmingoia/koa-router)
 * [koa-rt](https://github.com/dead-horse/koa-rt)
 * [koa-session](https://github.com/koajs/session)
-* [koa-sess](https://github.com/dead-horse/koa-session)
+* [koa-generic-session](https://github.com/koajs/generic-session)
 * [koa-static-cache](https://github.com/koajs/static-cache)
 
 see [exports](https://github.com/dead-horse/koa-middlewares/blob/master/index.js)
@@ -133,9 +133,9 @@ app.use(middlewares.logger());
 app.use(middlewares.cookieSession());
 ```
 
-* **koa-sess**: A session like connect with memory,
+* **koa-generic-session**: A session like connect with memory,
 has friendly APIs for work with other Stores such as `redis`, `mongo`.
-* **koa-redis**: Work togather with `koa-sess`, provide a redis store from koa-sess.
+* **koa-redis**: Work togather with `koa-generic-session`, provide a redis store from koa-sess.
 
 ```
 app.use(middlewares.session({
