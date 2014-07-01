@@ -30,6 +30,7 @@ npm install koa-middlewares --save
 * [koa-session](https://github.com/koajs/session)
 * [koa-generic-session](https://github.com/koajs/generic-session)
 * [koa-static-cache](https://github.com/koajs/static-cache)
+* [koa-onerror](https://github.com/koajs/onerror)
 
 see [exports](https://github.com/dead-horse/koa-middlewares/blob/master/index.js)
 
@@ -205,6 +206,12 @@ app.use(compress({
 }))
 ```
 
+* **koa-onerror**: Error handler
+
+```
+var app = koa()
+onerror(app);
+```
 
 ## License
 MIT
