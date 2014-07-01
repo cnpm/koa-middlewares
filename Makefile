@@ -1,5 +1,5 @@
 install:
-	@npm install --registry=http://registry.npm.taobao.org
+	@npm install --registry=http://registry.npm.taobao.org --save-dev autod
 
 autod: install
 	@node_modules/.bin/autod -w --prefix="~" -e example.js -k koa-rt,koa-jsonp
