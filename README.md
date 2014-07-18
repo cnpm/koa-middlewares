@@ -20,7 +20,7 @@ npm install koa-middlewares --save
 * [koa-conditional-get](https://github.com/koajs/koa-conditional-get)
 * [koa-etag](https://github.com/koajs/etag)
 * [koa-favicon](https://github.com/koajs/favicon)
-* [koa-jsonp](https://github.com/kilianc/koa-jsonp)
+* [koa-safe-jsonp](https://github.com/koajs/koa-safe-jsonp)
 * [koa-logger](https://github.com/koajs/logger)
 * [koa-redis](https://github.com/dead-horse/koa-redis)
 * [koa-resource-router](https://github.com/alexmingoia/koa-resource-router)
@@ -44,7 +44,6 @@ var middlewares = require('koa-middlewares');
 var app = koa();
 
 app.use(middlewares.bodyParser());
-app.use(middlewares.jsonp());
 app.use(middlewares.router(app));
 app.use(middlewares.conditional());
 app.use(middlewares.etag());
@@ -116,10 +115,14 @@ app.use(middlewares.etag());
 app.use(middlewares.favicon());
 ```
 
-* **koa-jsonp**: A koajs streaming friendly JSONP middleware that supports GET/POST JSONP requests.
+* **koa-safe-jsonp**: A safe jsonp plugins for koa.
 
 ```
-app.use(middlewares.jsonp());
+middlewares.jsonp(app);
+
+app.use(function* () {
+  this.jsonp = {foo: 'bar'};
+});
 ```
 
 * **koa-logger**: Development style logger.

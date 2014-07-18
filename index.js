@@ -17,7 +17,7 @@ exports.cookieSession = require('koa-session');
 exports.redisStore = exports.RedisStore = require('koa-redis');
 exports.staticCache = require('koa-static-cache');
 exports.rt = require('koa-rt');
-exports.jsonp = require('koa-jsonp');
+exports.jsonp = require('koa-safe-jsonp');
 exports.router = require('koa-router');
 exports.resourceRouter = exports.ResourceRouter = require('koa-resource-router');
 exports.csrf = require('koa-csrf');
