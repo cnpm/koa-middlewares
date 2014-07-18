@@ -1,5 +1,11 @@
 
-1.1.0 / 2014-07-07 
+1.2.0 / 2014-07-18
+==================
+
+  * use koa-safe-jsonp replace koa-jsonp
+  * bump dependencies
+
+1.1.0 / 2014-07-07
 ==================
 
   * bump dependencies
