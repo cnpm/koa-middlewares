@@ -48,7 +48,6 @@ app.use(middlewares.bodyParser());
 app.use(middlewares.router(app));
 app.use(middlewares.conditional());
 app.use(middlewares.etag());
-app.use(middlewares.sleep(200));
 app.use(middlewares.compress());
 middlewares.csrf(app);
 
@@ -211,7 +210,7 @@ app.use(compress({
 }))
 ```
 
-* **koa-sleep**: Koa middleware to sleep or delay processing.
+* **koa-sleep**: Koa middleware to sleep or delay processing. Default 100 milliseconds.
 
 ```
 var app = koa()
