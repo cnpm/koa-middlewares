@@ -1,6 +1,6 @@
 {
   "name": "koa-middlewares",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "easy way to require some useful koa middlewares",
   "main": "index.js",
   "scripts": {
@@ -43,6 +43,7 @@
     "koa-rt": "~0.0.2",
     "koa-safe-jsonp": "~0.3.0",
     "koa-session": "~2.0.0",
+    "koa-sleep": "~0.1.0",
     "koa-static-cache": "~1.2.0"
   },
   "devDependencies": {

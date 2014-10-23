@@ -31,6 +31,7 @@ npm install koa-middlewares --save
 * [koa-generic-session](https://github.com/koajs/generic-session)
 * [koa-static-cache](https://github.com/koajs/static-cache)
 * [koa-onerror](https://github.com/koajs/onerror)
+* [koa-sleep](https://github.com/montanaflynn/koa-sleep)
 
 see [exports](https://github.com/dead-horse/koa-middlewares/blob/master/index.js)
 
@@ -207,6 +208,13 @@ app.use(compress({
   threshold: 2048,
   flush: require('zlib').Z_SYNC_FLUSH
 }))
+```
+
+* **koa-sleep**: Koa middleware to sleep or delay processing. Default 100 milliseconds.
+
+```
+var app = koa()
+app.use(sleep(500))
 ```
 
 * **koa-onerror**: Error handler
