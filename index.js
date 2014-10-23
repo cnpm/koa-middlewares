@@ -27,4 +27,5 @@ exports.rewrite = require('koa-rewrite');
 exports.etag = require('koa-etag');
 exports.compress = require('koa-compress');
 exports.conditional = require('koa-conditional-get');
+exports.sleep = require('koa-sleep');
 exports.onerror = require('koa-onerror');

@@ -18,6 +18,7 @@ var app = koa();
 app.use(middlewares.bodyParser());
 app.use(middlewares.gzip({minLength: 100}));
 app.use(middlewares.router(app));
+app.use(middlewares.sleep(200));
 app.use(middlewares.fresh());
 app.use(middlewares.etag());
 middlewares.csrf(app);
