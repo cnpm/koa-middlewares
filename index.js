@@ -10,21 +10,21 @@
  * Module dependencies.
  */
 
+exports.resourceRouter = exports.ResourceRouter = require('koa-resource-router');
 exports.bodyparser = exports.bodyParser = require('koa-bodyparser');
-exports.ejs = require('koa-ejs');
+exports.redisStore = exports.RedisStore = require('koa-redis');
+exports.conditional = require('koa-conditional-get');
+exports.staticCache = require('koa-static-cache');
 exports.session = require('koa-generic-session');
 exports.cookieSession = require('koa-session');
-exports.redisStore = exports.RedisStore = require('koa-redis');
-exports.staticCache = require('koa-static-cache');
-exports.rt = require('koa-rt');
+exports.compress = require('koa-compress');
 exports.jsonp = require('koa-safe-jsonp');
-exports.router = require('koa-router');
-exports.resourceRouter = exports.ResourceRouter = require('koa-resource-router');
-exports.csrf = require('koa-csrf');
-exports.logger = require('koa-logger');
+exports.onerror = require('koa-onerror');
 exports.favicon = require('koa-favicon');
 exports.rewrite = require('koa-rewrite');
+exports.router = require('koa-router');
+exports.logger = require('koa-logger');
 exports.etag = require('koa-etag');
-exports.compress = require('koa-compress');
-exports.conditional = require('koa-conditional-get');
-exports.onerror = require('koa-onerror');
+exports.csrf = require('koa-csrf');
+exports.ejs = require('koa-ejs');
+exports.rt = require('koa-rt');

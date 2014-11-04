@@ -1,5 +1,7 @@
-koa-middlewares [![Dependency Status](https://gemnasium.com/cnpm/koa-middlewares.svg)](https://gemnasium.com/dead-horse/koa-middlewares)
+koa-middlewares
 ===============
+
+[![Dependency Status](https://gemnasium.com/cnpm/koa-middlewares.svg)](https://gemnasium.com/dead-horse/koa-middlewares)
 
 easy way to use some small but useful koa middlewares.
 
@@ -14,25 +16,25 @@ npm install koa-middlewares --save
 ## middlewares
 
 * [koa-bodyparser](https://github.com/dead-horse/koa-body-parser)
-* [koa-csrf](https://github.com/koajs/csrf)
-* [koa-ejs](https://github.com/dead-horse/koa-ejs)
 * [koa-compress](https://github.com/koajs/koa-compress)
 * [koa-conditional-get](https://github.com/koajs/koa-conditional-get)
+* [koa-csrf](https://github.com/koajs/csrf)
+* [koa-ejs](https://github.com/dead-horse/koa-ejs)
 * [koa-etag](https://github.com/koajs/etag)
 * [koa-favicon](https://github.com/koajs/favicon)
-* [koa-safe-jsonp](https://github.com/koajs/koa-safe-jsonp)
+* [koa-generic-session](https://github.com/koajs/generic-session)
 * [koa-logger](https://github.com/koajs/logger)
+* [koa-onerror](https://github.com/koajs/onerror)
 * [koa-redis](https://github.com/dead-horse/koa-redis)
 * [koa-resource-router](https://github.com/alexmingoia/koa-resource-router)
 * [koa-rewrite](https://github.com/koajs/rewrite)
 * [koa-router](https://github.com/alexmingoia/koa-router)
 * [koa-rt](https://github.com/dead-horse/koa-rt)
+* [koa-safe-jsonp](https://github.com/koajs/koa-safe-jsonp)
 * [koa-session](https://github.com/koajs/session)
-* [koa-generic-session](https://github.com/koajs/generic-session)
 * [koa-static-cache](https://github.com/koajs/static-cache)
-* [koa-onerror](https://github.com/koajs/onerror)
 
-see [exports](https://github.com/dead-horse/koa-middlewares/blob/master/index.js)
+see [exports](index.js)
 
 ## Usage
 
