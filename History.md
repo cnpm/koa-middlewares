@@ -1,5 +1,11 @@
 
-1.4.1 / 2014-10-07 
+1.4.2 / 2014-11-04
+==================
+
+  * refine
+  * bump bodyparser, router
+
+1.4.1 / 2014-10-07
 ==================
 
   * bump static-cache and favicon
