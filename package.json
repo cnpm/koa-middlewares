@@ -38,11 +38,11 @@
     "koa-redis": "~0.1.1",
     "koa-resource-router": "~0.3.3",
     "koa-rewrite": "~1.1.0",
-    "koa-router": "~3.5.0",
+    "koa-router": "~3.7.0",
     "koa-rt": "~0.0.2",
     "koa-safe-jsonp": "~0.3.0",
     "koa-session": "~2.0.0",
-    "koa-static-cache": "~1.2.0"
+    "koa-static-cache": "~2.0.0"
   },
   "devDependencies": {
     "autod": "^1.1.1",
