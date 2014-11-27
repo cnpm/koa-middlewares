@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/dead-horse/koa-middlewares",
   "dependencies": {
-    "koa-bodyparser": "~1.2.0",
+    "koa-bodyparser": "~1.3.0",
     "koa-compress": "~1.0.8",
     "koa-conditional-get": "~1.0.2",
     "koa-csrf": "~2.1.3",
