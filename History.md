@@ -1,4 +1,15 @@
 
+1.7.0 / 2014-11-27
+==================
+
+  * bump koa-bodyparser
+  * bump koa-redis and koa-generic-session
+
+1.6.0 / 2014-11-16
+==================
+
+  * bump koa-router and koa-static-cache
+
 1.5.0 / 2014-11-07
 ==================
 
