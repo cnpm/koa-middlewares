@@ -41,11 +41,11 @@
     "koa-router": "~3.7.0",
     "koa-rt": "~0.0.2",
     "koa-safe-jsonp": "~0.3.0",
-    "koa-session": "~2.0.0",
-    "koa-static-cache": "~2.0.0"
+    "koa-session": "~3.0.0",
+    "koa-static-cache": "~2.0.1"
   },
   "devDependencies": {
-    "autod": "^1.1.2",
+    "autod": "^1.1.4",
     "koa": "~0.13.0"
   },
   "files": [
