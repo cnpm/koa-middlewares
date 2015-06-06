@@ -1,6 +1,6 @@
 {
   "name": "koa-middlewares",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "description": "easy way to require some useful koa middlewares",
   "main": "index.js",
   "scripts": {
