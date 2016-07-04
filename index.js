@@ -1,14 +1,4 @@
-/*!
- * koa-middlewares - index.js
- * Copyright(c) 2014 dead_horse <dead_horse@qq.com>
- * MIT Licensed
- */
-
 'use strict';
-
-/**
- * Module dependencies.
- */
 
 exports.resourceRouter = exports.ResourceRouter = require('koa-resource-router');
 exports.bodyparser = exports.bodyParser = require('koa-bodyparser');

@@ -1,19 +1,9 @@
-/*!
- * koa-middlewares - example.js
- * Copyright(c) 2014 dead_horse <dead_horse@qq.com>
- * MIT Licensed
- */
-
 'use strict';
 
-/**
- * Module dependencies.
- */
+const koa = require('koa');
+const middlewares = require('./');
 
-var koa = require('koa');
-var middlewares = require('./');
-
-var app = koa();
+const app = koa();
 
 app.use(middlewares.bodyParser());
 app.use(middlewares.gzip({minLength: 100}));
