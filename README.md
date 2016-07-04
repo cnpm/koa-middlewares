@@ -1,7 +1,22 @@
 koa-middlewares
 ===============
 
-[![Dependency Status](https://gemnasium.com/cnpm/koa-middlewares.svg)](https://gemnasium.com/dead-horse/koa-middlewares)
+[![NPM version][npm-image]][npm-url]
+[![build status][travis-image]][travis-url]
+[![David deps][david-image]][david-url]
+[![Known Vulnerabilities][snyk-image]][snyk-url]
+[![npm download][download-image]][download-url]
+
+[npm-image]: https://img.shields.io/npm/v/koa-middlewares.svg?style=flat
+[npm-url]: https://npmjs.org/package/koa-middlewares
+[travis-image]: https://img.shields.io/travis/cnpm/koa-middlewares.svg?style=flat
+[travis-url]: https://travis-ci.org/cnpm/koa-middlewares
+[david-image]: https://img.shields.io/david/cnpm/koa-middlewares.svg?style=flat
+[david-url]: https://david-dm.org/cnpm/koa-middlewares
+[snyk-image]: https://snyk.io/test/npm/koa-middlewares/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/koa-middlewares
+[download-image]: https://img.shields.io/npm/dm/koa-middlewares.svg?style=flat-square
+[download-url]: https://npmjs.org/package/koa-middlewares
 
 easy way to use some small but useful koa middlewares.
 
@@ -9,7 +24,7 @@ easy way to use some small but useful koa middlewares.
 
 ## install
 
-```
+```bash
 npm install koa-middlewares --save
 ```
 
@@ -64,7 +79,7 @@ app.listen(7001);
 * **koa-bodyparser**: post body parser,
 for `application/json` and `application/x-www-form-urlencoded`.
 
-```
+```js
 app.use(middlewares.bodyParser({
   limit: '10mb'
 }));
@@ -76,7 +91,7 @@ app.use(function *(next) {
 
 * **koa-csrf**: CSRF tokens.
 
-```
+```js
 middlewares.csrf(app);
 app.use(function *checkCsrf(next) {
   if (this.method === 'GET' ||
@@ -92,7 +107,7 @@ app.use(function *checkCsrf(next) {
 
 * **koa-ejs**: ejs view render middleware. support all feature of ejs.
 
-```
+```js
 middlewares.render(app, {
   root: path.join(__dirname, 'view')
 });
@@ -106,20 +121,20 @@ app.use(function *() {
 * **koa-conditional-get**: HTTP response freshness testing middleware base on node-fresh.
 use it upstream from etag.
 
-```
+```js
 app.use(middlewares.conditional());
 app.use(middlewares.etag());
 ```
 
 * **koa-favicon**: Bounce favicon requests with a 404.
 
-```
+```js
 app.use(middlewares.favicon());
 ```
 
 * **koa-safe-jsonp**: A safe jsonp plugins for koa.
 
-```
+```js
 middlewares.jsonp(app);
 
 app.use(function* () {
@@ -129,13 +144,13 @@ app.use(function* () {
 
 * **koa-logger**: Development style logger.
 
-```
+```js
 app.use(middlewares.logger());
 ```
 
 * **koa-session**: cookie base session.
 
-```
+```js
 app.use(middlewares.cookieSession());
 ```
 
@@ -143,7 +158,7 @@ app.use(middlewares.cookieSession());
 has friendly APIs for work with other Stores such as `redis`, `mongo`.
 * **koa-redis**: Work togather with `koa-generic-session`, provide a redis store from koa-sess.
 
-```
+```js
 app.use(middlewares.session({
   store: middlewares.RedisStore(),
   defer: true
@@ -158,7 +173,7 @@ app.use(function *() {
 
 * **koa-router**: Provide express-style routing using app.get, app.put, app.post.
 
-```
+```js
 app.use(middlewares.router(app));
 app.get('/', function *() {
   this.body = 'Hello koa-router';
@@ -167,7 +182,7 @@ app.get('/', function *() {
 
 * **koa-resource-router**: RESTful resource routing for koa.
 
-```
+```js
 var users = new middlewares.Resource('users');
 app.use(users.middleware());
 
@@ -178,13 +193,13 @@ app.get('/users', function *() {
 
 * **koa-rewrite**: URL rewrite middleware.
 
-```
+```js
 app.use(middlewares.rewrite('/js/*', '/public/assets/js/$1'));
 ```
 
 * **koa-rt**: Log response time, support custom with microtime.
 
-```
+```js
 var microtime = require('microtime');
 app.use(middlewares.rt({
   timer: microtime
@@ -193,7 +208,7 @@ app.use(middlewares.rt({
 
 * **koa-static-cache**: Static file serving from memory.
 
-```
+```js
 app.use(middlewares.staticCache(path.join(__dirname, 'public'), {
   buffer: true,
   maxAge: 60 * 60 * 24 * 7,
@@ -203,7 +218,7 @@ app.use(middlewares.staticCache(path.join(__dirname, 'public'), {
 
 * **koa-compress**: Compress middleware for Koa, support `gzip` and `deflate`
 
-```
+```js
 var app = koa()
 app.use(compress({
   threshold: 2048,
@@ -213,10 +228,11 @@ app.use(compress({
 
 * **koa-onerror**: Error handler
 
-```
+```js
 var app = koa()
 onerror(app);
 ```
 
 ## License
-MIT
+
+[MIT](LICENSE)
