@@ -57,19 +57,21 @@ see [exports](index.js)
 
 var koa = require('koa');
 var middlewares = require('koa-middlewares');
+var router = middlewares.router();
 
 var app = koa();
 
+router.get('/', function *(){
+  this.body = 'hello koa-middlewares';
+});
+
 app.use(middlewares.bodyParser());
-app.use(middlewares.router(app));
 app.use(middlewares.conditional());
 app.use(middlewares.etag());
 app.use(middlewares.compress());
 middlewares.csrf(app);
-
-app.use(function *() {
-  this.body = 'hello koa-middlewares';
-});
+app.use(router.routes());
+app.use(router.allowedMethods());
 
 app.listen(7001);
 ```
@@ -174,10 +176,14 @@ app.use(function *() {
 * **koa-router**: Provide express-style routing using app.get, app.put, app.post.
 
 ```js
-app.use(middlewares.router(app));
-app.get('/', function *() {
+var router = middlewares.router();
+
+router.get('/', function *() {
   this.body = 'Hello koa-router';
 });
+
+app.use(router.routes());
+app.use(router.allowedMethods());
 ```
 
 * **koa-resource-router**: RESTful resource routing for koa.
